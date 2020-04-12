@@ -1,0 +1,37 @@
+.back{
+    width:450px;
+    height: 500px;
+    background: lightblue;
+    left:35%;
+    top:20%;
+}
+
+.back p{
+    margin-left:65px;
+    width: 300px;
+}
+.back img{
+     margin-left: 180px;
+     width:70px;
+ }
+.back span{
+    margin-left: 160px;
+}
+.back p input{
+    width:300px;
+    height: 40px;
+}
+
+.back button{
+    width:300px;
+    height: 40px;
+}
+
+.blank{
+    width:100%;
+    height:100%;
+}
+
+html{
+    height: 100%;
+}

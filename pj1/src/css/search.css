@@ -1,0 +1,16 @@
+
+.content{
+    width: 100%;
+    height: 150%;
+}
+
+.p2 {
+    width: 65%;
+    height: 65px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}

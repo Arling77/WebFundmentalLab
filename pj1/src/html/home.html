@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link href="../css/home.css" rel="stylesheet" type="text/css">
+        <link href="../css/nav.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <div style="position:relative" class="nav-bar">
+
+
+        <div class="nav-content">
+
+            <ul>
+                <img class="home-icon" src="../img/icon.jpg" >
+                <li><a href="home.html"><b>Home</b></a></li>
+                <li><a href="browser.html"><b><u>Browse</u></b></a></li>
+                <li><a href="search.html"><b>Search</b></a></li>
+
+                <li style="position:absolute; right:0px">
+                    <a href="#"><b>My Account</b></a>
+                    <ul>
+                        <li><a href="upload.html">Upload</a></li>
+                        <li><a href="myPhotos.html">My Photos</a></li>
+                        <li><a href="favor.html">My Favorite</a></li>
+                        <li><a href="login.html">Log in</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+    
+    </div>
+
+    <div style="position:relative">
+        <img src="../img/timg.jpg" width="100%" style="position:relative">
+    </div>
+
+    <div style="position:relative">
+        <div class="firstpart">
+            <a href="details.html"><img src="../img/1.jpg" width="100%"></a>
+            <div>
+                <p><b><span>&nbsp;&nbsp; Title</span></b></p>
+                <p><span style="font-size: large; ">  XXXXXXXXXXX...</span></p>
+            </div>
+        </div>
+        <div class="firstpart">
+           <a href="details.html"><img src="../img/2.jpg" width="100%"></a>
+            <div>
+                <p><b><span>&nbsp;&nbsp;Title</span></b></p>
+                <p><span style="font-size: large; ">XXXXXXXXXXX...</span></p>
+            </div>
+        </div>
+        <div class="firstpart">
+            <a href="details.html"><img src="../img/3.jpg" width="100%"></a>
+            <div>
+                <p><b><span>&nbsp;&nbsp;Title</span></b></p>
+                <p><span style="font-size: large; ">XXXXXXXXXXX...</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div style="position:relative">
+        <div class="firstpart">
+          <a href="details.html"><img src="../img/4.jpg" width="100%"></a>
+            <div>
+                <p><b><span>&nbsp;&nbsp;Title</span></b></p>
+                <p><span style="font-size: large; ">XXXXXXXXXXX...</span></p>
+            </div>
+        </div>
+        <div class="firstpart">
+            <a href="details.html"><img src="../img/5.jpg" width="100%"></a>
+            <div>
+                <p><b><span>&nbsp;&nbsp;Title</span></b></p>
+                <p><span style="font-size: large; ">XXXXXXXXXXX...</span></p>
+            </div>
+        </div>
+        <div class="firstpart">
+            <a href="details.html"><img src="../img/6.jpg" width="100%"></a>
+            <div>
+                <p><b><span>&nbsp;&nbsp;Title</span></b></p>
+                 <p><span style="font-size: large; ">XXXXXXXXXXX...</span></p>
+            </div>
+        </div>
+        </div>
+
+
+    <button style="position: fixed; right: 5%; bottom: 15%; height:30px; width: 50px;" onclick=alert("Refresh") >R</button>
+    
+
+    <button style="position: fixed; right: 5%; bottom: 10%; height: 30px; width: 50px;" id="btn">T</button>
+    <script>
+        function goTop(){
+
+            var speed = 100;
+
+            
+            var timer = setInterval(function(){
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                document.documentElement.scrollTop = document.body.scrollTop = (scrollTop - speed);
+                speed += 30;
+                if(scrollTop <= 0){
+                    clearInterval(timer);
+                }
+            },30)
+        }
+
+        btn.onclick = function(){
+            goTop();
+        }
+    </script>
+    </body>
+    <footer  >
+        <p align="center">
+            <br>
+            16302010046
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            All Rights Reversed
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Copyright xxxxxxx
+        </p>
+    </footer>
+
+</html>

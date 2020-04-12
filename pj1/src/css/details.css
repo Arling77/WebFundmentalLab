@@ -1,0 +1,39 @@
+
+.test li{
+    text-align:right;
+}
+.right{
+    position:absolute;
+    right:0px;
+}
+body{
+    background:#eff3f5;
+}
+
+
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+.content1{
+    width: 90%;
+    height: 5%;
+    left:5%;
+    top:5%;
+    background: rgb(238, 238, 231);
+}
+
+.content2{
+    width: 90%;
+    height: 85%;
+    left: 5%;
+    top: 5%;
+    background: rgb(221, 235, 243);
+}
+
+.ttop{
+    width:100%;
+    height:60px;
+    margin-top:0;
+}
