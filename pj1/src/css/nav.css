@@ -28,36 +28,35 @@
 
 }
 .nav-content ul{
-    /* 清除ul标签的默认样式 */
-    width: auto;/*宽度也改为自动*/
+
+    width: auto;
     list-style-type: none;
     white-space:nowrap;
     overflow: hidden;
     margin-left: 60px;
-    /* margin-top: 0;          */
     padding: 0;
 
 }
 .nav-content li {
-    float:left; /* 使li内容横向浮动，即横向排列  */
-    margin-right:2%;  /* 两个li之间的距离*/
+    float:left;
+    margin-right:2%;
     position: relative;
     overflow: hidden;
 }
 
 .nav-content li a{
-    /* 设置链接内容显示的格式*/
-    display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+
+    display: block;
     color:white;
     text-align: center;
     padding: 3px;
-    overflow: hidden;
-    text-decoration:none; /* 去除下划线 */
+
+    text-decoration:none;
 
 }
 
 .nav-content li a:hover{
-    /* 鼠标选中时背景变为黑色 */
+
     background-color:lightblue;
     color: white;
 
@@ -72,23 +71,18 @@
 }
 
 .nav-content ul li ul{
-    /* 设置二级菜单 */
     display:block;
-
     margin-left: -0.2px;
     background:black;
     position: relative;
-    display: none; /* 默认隐藏二级菜单的内容 */
+    display: none;
 
 }
 .nav-content ul li ul li{
-    /* 二级菜单li内容的显示 */
-
     float:none;
     text-align: center;
 }
 .nav-content ul li:hover ul{
-    /* 鼠标选中二级菜单内容时 */
     display: block;
 }
 

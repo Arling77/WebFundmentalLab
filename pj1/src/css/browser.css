@@ -26,6 +26,7 @@ body{
 
 .contentleft p a{
     text-decoration: none;
+    color: lightblue;
 }
 .contentright{
     width: 74%;

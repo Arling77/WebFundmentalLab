@@ -4,36 +4,7 @@
 
         <link href="../css/nav.css" rel="stylesheet" type="text/css">
         <link href="../css/upload.css" rel="stylesheet" type="text/css">
-        <script>
-            var fileDom = document.getElementById("file");
-            var previewDom = document.getElementById("preview");
-            fileDom.addEventListener("change", e=>{
-                var file = fileDom.files[0];
-                // check if input contains a valid image file
-                if (!file || file.type.indexOf("image/") < 0) {
-                    fileDom.value = "";
-                    previewDom.src = "";
-                    return;
-                }
 
-                // use FileReader to load image and show preview of the image
-                var fileReader = new FileReader();
-                fileReader.onload = e=>{
-                    previewDom.src = e.target.result;
-                };
-                fileReader.readAsDataURL(file);
-            });
-
-            var formDom = document.getElementById("form");
-            function check() {
-                var file = fileDom.files[0];
-                // check if input contains a valid image file
-                if (!file || file.type.indexOf("image/") < 0) {
-                    return false;
-                }
-                return true;
-            }
-        </script>
     </head>
     <div style="position:relative" class="nav-bar">
 
@@ -41,7 +12,7 @@
         <div class="nav-content">
 
             <ul>
-                <img class="home-icon" src="../img/icon.jpg" >
+                <img class="home-icon" src="../../img/icon.jpg" >
                 <li><a href="home.html"><b>Home</b></a></li>
                 <li><a href="browser.html"><b><u>Browse</u></b></a></li>
                 <li><a href="search.html"><b>Search</b></a></li>
@@ -66,17 +37,46 @@
         <input type="file" accept="image/*" name="file" id="file" style="position: absolute; left:45%; width:200px; top:400px"/>
     </form>
 
-    <p style="position: absolute; left:18%; top:450px">Title</p>
+    <p style="position: absolute; left:18%; top:450px">Title:</p>
     <input type="text" name="title" style="position: absolute; left:24%; width:60%; top:465px">
-    <p style="position: absolute; left:18%; top:500px">Country</p>
+    <p style="position: absolute; left:18%; top:500px">Country:</p>
     <input type="text" name="Country" style="position: absolute; left:24%; width:60%; top:515px">
-    <p style="position: absolute; left:18%; top:550px">City</p>
+    <p style="position: absolute; left:18%; top:550px">City:</p>
     <input type="text" name="City" style="position: absolute; left:24%; width:60%; top:565px">
-    <p style="position: absolute; left:18%; top:600px">Description</p>
+    <p style="position: absolute; left:18%; top:600px">Description:</p>
     <textarea name="description" style="position: absolute; left:24%; top: 615px; width:60%; height: 120px;"></textarea>
     <a href="myPhotos.html"><button onclick=alert("OK") style="position: absolute; left:47%; top:770px; width:120px; height:30px">submit</button></a>
     </div>
+    <script>
+        var fileDom = document.getElementById("file");
+        var previewDom = document.getElementById("preview");
+        fileDom.addEventListener("change", e=>{
+            var file = fileDom.files[0];
+            // check if input contains a valid image file
+            if (!file || file.type.indexOf("image/") < 0) {
+                fileDom.value = "";
+                previewDom.src = "";
+                return;
+            }
 
+            // use FileReader to load image and show preview of the image
+            var fileReader = new FileReader();
+            fileReader.onload = e=>{
+                previewDom.src = e.target.result;
+            };
+            fileReader.readAsDataURL(file);
+        });
+
+
+        function check() {
+            var file = fileDom.files[0];
+            // check if input contains a valid image file
+            if (!file || file.type.indexOf("image/") < 0) {
+                return false;
+            }
+            return true;
+        }
+    </script>
     <footer  >
         <p align="center">
             <br>

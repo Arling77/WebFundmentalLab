@@ -11,7 +11,7 @@
         <div class="nav-content">
 
             <ul>
-                <img class="home-icon" src="../img/icon.jpg" >
+                <img class="home-icon" src="../../img/icon.jpg" >
                 <li><a href="home.html"><b>Home</b></a></li>
                 <li><a href="browser.html"><b><u>Browse</u></b></a></li>
                 <li><a href="search.html"><b>Search</b></a></li>
@@ -33,26 +33,26 @@
     </div>
 
     <div style="position:relative">
-        <img src="../img/timg.jpg" width="100%" style="position:relative">
+        <img src="../../img/timg.jpg" width="100%" style="position:relative">
     </div>
 
     <div style="position:relative">
         <div class="firstpart">
-            <a href="details.html"><img src="../img/1.jpg" width="100%"></a>
+            <a href="details.html"><img src="../../img/1.jpg" width="100%"></a>
             <div>
                 <p><b><span>&nbsp;&nbsp; Title</span></b></p>
                 <p><span style="font-size: large; ">  XXXXXXXXXXX...</span></p>
             </div>
         </div>
         <div class="firstpart">
-           <a href="details.html"><img src="../img/2.jpg" width="100%"></a>
+           <a href="details.html"><img src="../../img/2.jpg" width="100%"></a>
             <div>
                 <p><b><span>&nbsp;&nbsp;Title</span></b></p>
                 <p><span style="font-size: large; ">XXXXXXXXXXX...</span></p>
             </div>
         </div>
         <div class="firstpart">
-            <a href="details.html"><img src="../img/3.jpg" width="100%"></a>
+            <a href="details.html"><img src="../../img/3.jpg" width="100%"></a>
             <div>
                 <p><b><span>&nbsp;&nbsp;Title</span></b></p>
                 <p><span style="font-size: large; ">XXXXXXXXXXX...</span></p>
@@ -62,21 +62,21 @@
 
     <div style="position:relative">
         <div class="firstpart">
-          <a href="details.html"><img src="../img/4.jpg" width="100%"></a>
+          <a href="details.html"><img src="../../img/4.jpg" width="100%"></a>
             <div>
                 <p><b><span>&nbsp;&nbsp;Title</span></b></p>
                 <p><span style="font-size: large; ">XXXXXXXXXXX...</span></p>
             </div>
         </div>
         <div class="firstpart">
-            <a href="details.html"><img src="../img/5.jpg" width="100%"></a>
+            <a href="details.html"><img src="../../img/5.jpg" width="100%"></a>
             <div>
                 <p><b><span>&nbsp;&nbsp;Title</span></b></p>
                 <p><span style="font-size: large; ">XXXXXXXXXXX...</span></p>
             </div>
         </div>
         <div class="firstpart">
-            <a href="details.html"><img src="../img/6.jpg" width="100%"></a>
+            <a href="details.html"><img src="../../img/6.jpg" width="100%"></a>
             <div>
                 <p><b><span>&nbsp;&nbsp;Title</span></b></p>
                  <p><span style="font-size: large; ">XXXXXXXXXXX...</span></p>
@@ -90,23 +90,9 @@
 
     <button style="position: fixed; right: 5%; bottom: 10%; height: 30px; width: 50px;" id="btn">T</button>
     <script>
-        function goTop(){
-
-            var speed = 100;
-
-            
-            var timer = setInterval(function(){
-                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                document.documentElement.scrollTop = document.body.scrollTop = (scrollTop - speed);
-                speed += 30;
-                if(scrollTop <= 0){
-                    clearInterval(timer);
-                }
-            },30)
-        }
 
         btn.onclick = function(){
-            goTop();
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
         }
     </script>
     </body>
